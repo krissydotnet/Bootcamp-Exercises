@@ -1,0 +1,54 @@
+/* my first css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffcc;
+}
+img {
+    border: 10px solid green;
+}
+h1 {
+    border: 5px dotted pink;
+    background-color:#355C7D;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    background: #355C7D url(http://placekitten.com/200/300) no-repeat left top;
+    padding: 10px 10px 10px 210px;
+}
+cite {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* unvisited links */
+ul a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: lightblue;
+    font-size: 2rem;
+}
+/* visited link */
+a:visited {
+    color: green;
+    font-weight: normal;
+}
+/* hover link */
+a:hover {
+    color: orange;
+    text-decoration: underline;
+    background-color: black;
+}
+a.harvard {
+    color: maroon;
+}
+
