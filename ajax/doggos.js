@@ -44,9 +44,27 @@ select.addEventListener("change", function(event) {
     // show loading spinner
 
     // fetch from the API
-    getDog(url);
+    getDoggo(url);
     // use the URL to change the current image
 
     // stop showing loading spinner
 
 });
+const img = document.querySelector('.dog-img');
+const spinner = document.querySelector('.spinner');
+
+function getDoggo(url) {
+    spinner.classList.add("show");
+    img.classList.remove("show");
+
+    fetch(url).then(function (response) {
+        return response.json();
+    }).then(function(data) {
+        img.src = data.message;
+
+    })
+}
+img.addEventListener("load", function() {
+    spinner.classList.remove("show");
+    img.classList.add("show");
+})
